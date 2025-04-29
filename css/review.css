@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee&family=Patrick+Hand+SC&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --myblue: #23f1ee;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+
+.heading span {
+    font-size: 2.2rem;
+    color: transparent;
+    font-family: "Black Ops One", system-ui;
+    background: linear-gradient(to right, #23f1ee, white, #23f1ee);
+    background-clip: text;
+
+}
+
+.heading hr {
+    margin-top: 4px;
+}
+
+.heading-none {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper .container {
+    width: 25%;
+    margin: 2%;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px 0;
+    border-radius: 5px;
+    /* overflow: hidden; */
+
+}
+
+.cnt-hover:hover {
+    box-shadow: 0 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 8px solid #23f1ee;
+    cursor: pointer;
+}
+
+.wrapper .container:hover .img-hover {
+    transform: scale(.9);
+}
+
+.caption {
+    color: #23f1ee;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: "Black Ops One", system-ui;
+}
+
+.wrapper .container ul li {
+    border: 1px solid #23f1ee;
+    padding: 6px;
+    margin: 1rem 0;
+    display: block;
+    line-height: 1.5rem;
+    color: whitesmoke;
+}
+
+.container ul li span {
+    color: #23f1ee;
+    font-size: 1.1rem;
+    margin-right: .3rem;
+    font-weight: 600;
+    font-family: system-ui, sans-serif;
+}
+
+.wrapper .container .item-img {
+
+    width: 100%;
+    height: 40vh;
+    background: white;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 5px 5px 0 0;
+}
+
+.wrapper .container ul {
+    height: 0;
+    overflow: hidden;
+    /* background: red; */
+}
+
+#back {
+    display: none;
+    color: #23f1ee;
+    background: rgba(110, 109, 109, 0.402);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background: #23f1ee;
+        color: black;
+    }
+}
+
+.ele {
+    display: block !important;
+    width: 80% !important;
+}
+
+.wrapper .container .item-img .img {
+    width: 100%;
+    height: 100%;
+}
+
+#img1 {
+    background: url("../images/xiaomi 14.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img2 {
+    background: url("../images/tecno pova 6 pro.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img3 {
+    background: url("../images/vivo v30.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img4 {
+    background: url("../images/motorola edge 40 neo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img5 {
+    background: url("../images/moto g53.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img6 {
+    background: url("../images/realme 12 pro+.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img7 {
+    background: url("../images/honor magic 6 pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img8 {
+    background: url("../images/samsung galaxy a15 5g.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img9 {
+    background: url("../images/oneplus-12r.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img10 {
+    background: url("../images/oppo-find-x7-ultra.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img11 {
+    background: url("../images/iphone-14-plus.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img12 {
+    background: url("../images/Vivo-V29-Pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img13 {
+    background: url("../images/vivo-iqoo-z5.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img14 {
+    background: url("../images/samsung-galaxy-a25.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img15 {
+    background: url("../images/poco-m6-pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img16 {
+    background: url("../images/infinix-hot-40-pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img17 {
+    background: url("../images/Redmi_Note_13.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img18 {
+    background: url("../images/Realme-GT5-Pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img19 {
+    background: url("../images/realme-c55.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img20 {
+    background: url("../images/vivo-v27-pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+@media (max-width:1000px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .wrapper .container .item-img {
+        height: 30vh;
+    }
+
+    .heading span {
+        font-size: 1.6rem;
+    }
+
+    .heading hr {
+        width: 50px;
+    }
+}
+
+@media (max-width: 860px) {
+    .wrapper .container {
+        width: 35%;
+    }
+
+    .caption {
+        font-size: 1.2rem;
+    }
+
+    .cnt-hover:hover {
+        outline: 6px solid #23f1ee;
+    }
+
+    .heading span {
+        font-size: 1.4rem;
+    }
+
+    .heading hr {
+        width: 40px;
+        margin-top: 5px;
+    }
+
+    #back {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 1rem;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .wrapper .container {
+        width: 40%;
+    }
+
+    .cnt-hover:hover {
+        outline: 5px solid #23f1ee;
+    }
+}
+
+@media (max-width:560px) {
+    .wrapper .container {
+        width: 45%;
+    }
+
+    .caption {
+        font-size: .8rem;
+    }
+
+    .wrapper .container .item-img {
+        height: 20vh;
+    }
+
+    .cnt-hover:hover {
+        outline: 3px solid #23f1ee;
+    }
+
+    .heading span {
+        font-size: 1.2rem;
+    }
+
+    .heading hr {
+        width: 30px;
+    }
+}

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="">
+    <title>Gadget Glance - Reviews</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/review.css">
+    <style>
+        
+#img1 {
+    background: url("images/apple-ipad(2021).jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img2 {
+    background: url("images/lenovo-tab-m8-hd.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img3 {
+    background: url("images/samsung-galaxy-tab-a7-lite.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img4 {
+    background: url("images/lenovo-tab-m10-fhd-plus.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img5 {
+    background: url("images/realme-pad.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img6 {
+    background: url("images/apple-ipad-air(5th gen).jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img7 {
+    background: url("images/samsung-galaxy-tab-s8-ultra.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img8 {
+    background: url("images/xiaomi-pad-6.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img9 {
+    background: url("images/oneplus-pad-go.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img10 {
+    background: url("images/motorola-moto-tab-g62.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img11 {
+    background: url("images/amazon-fire-hd-10.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img12 {
+    background: url("images/utron-t7-pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img13 {
+    background: url("images/ironshield-iplay-40.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img14 {
+    background: url("images/ikall-n5-4g.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img15 {
+    background: url("images/alldocube-iplay-40.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img16 {
+    background: url("images/teclast-m40.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img17 {
+    background: url("images/chuwi-hi10-go.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img18 {
+    background: url("images/apple-ipad-pro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img19 {
+    background: url("images/lenovo_yoga_tab_13.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#img20 {
+    background: url("images/hp-elite-x2-g8.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.container ul p{
+    display: block;
+    color:#23fee1;
+    font-size: 1.2rem;
+    font-weight: 600; 
+     margin-top: 1rem;
+}
+    </style>
+
+    <script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" id="logo" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-box">
+            <input type="search" id="nav-search" placeholder="Search For Review..." />
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle">
+            <div class="menu">
+                <span>menu</span>
+                <div class="bars">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+            </div>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="home">Reviews</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <ul class="sub-reviews">
+            <span class="cross" id="cross">X</span>
+            <li><a href="reviews.html">Mobile Reviews</a></li>
+            <li><a href="laptop_review.html">Laptop Reviews</a></li>
+            <li><a href="tablet_review.html">Tablet Reviews</a></li>
+        </ul>
+    </header>
+
+    <div class="heading">
+        <hr class="hr1">
+        <span class="heading2">Tab Reviews</span>
+        <hr class="hr2">
+    </div>
+
+    <div class="wrapper">
+
+        <i class="fa-solid fa-arrow-left" id="back"></i>
+        <div class="container cnt-hover" id="cont1" onclick="display('cont1')">
+            <div class="item-img img-hover">
+                <div class="img" id="img1"></div>
+            </div>
+            <span class="caption">Apple iPad (2021)</span>
+            <ul>
+                <p>* Best Overall Tablet</p>
+                <li>
+                    <span>Display:</span> 10.2-inch Retina display with 2160 x 1620 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Apple A13 Bionic chip
+                </li>
+                <li>
+                    <span>RAM:</span> 3GB
+                </li>
+                <li>
+                    <span>Storage:</span> <br>
+                    32GB - Starting price: <span>₹28,900</span> (approx.) <br>
+                    64GB - Starting price: <span>₹35,900</span> (approx.)
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 10 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 12MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> iPadOS 15 (upgradeable to iPadOS 16)
+                </li>
+                <li>
+                    <span>Special Features:</span> Touch ID fingerprint sensor, Apple Pencil (1st generation) support
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont2" onclick="display('cont2')">
+            <div class="item-img img-hover">
+                <div class="img" id="img2"></div>
+            </div>
+            <span class="caption">Lenovo Tab M8 HD</span>
+            <ul>
+                <span>* Best Budget Tablets</span>
+                <li>
+                    <span>Display:</span> 8-inch HD display with 1280 x 800 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> MediaTek Helio G80
+                </li>
+                <li>
+                    <span>RAM:</span> 
+                    2GB - Starting price: <span>₹10,999</span> (approx.) <br>
+                    3GB - Starting price: <span>₹12,499</span> (approx.)
+                </li>
+                <li>
+                    <span>Storage:</span> 32GB - Starting price: <span>₹10,999</span> (approx.)
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 5 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 5MP rear camera, 2MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 11
+                </li>
+                <li>
+                    <span>Special Features:</span> MicroSD card slot for expandable storage
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont3" onclick="display('cont3')">
+            <div class="item-img img-hover">
+                <div class="img" id="img3"></div>
+            </div>
+            <span class="caption">Samsung Galaxy Tab A7 Lite</span>
+            <ul>
+                <span>* Best Budget Tablets</span>
+                <li>
+                    <span>Display:</span> 8.7-inch TFT display with 1340 x 800 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> MediaTek Helio P22T
+                </li>
+                <li>
+                    <span>RAM:</span> 3GB - Starting price: <span>₹12,999</span> (approx.)
+                </li>
+                <li>
+                    <span>Storage:</span> 32GB - Starting price: <span>₹12,999</span> (approx.) (Expandable up to 1TB with microSD card)
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 8 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 2MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 11
+                </li>
+                <li>
+                    <span>Special Features:</span> Dolby Atmos sound
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont4" onclick="display('cont4')">
+            <div class="item-img img-hover">
+                <div class="img" id="img4"></div>
+            </div>
+            <span class="caption">Lenovo Tab M10 FHD Plus </span>
+            <ul>
+                <span>* Best Tablets for Students</span>
+                <li>
+                    <span>Display:</span> 10.61-inch Full HD display with 1920 x 1080 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> MediaTek Helio G80
+                </li>
+                <li>
+                    <span>RAM:</span> 4GB - Starting price: <span>₹13,999</span> (approx.)
+                </li>
+                <li>
+                    <span>Storage:</span> 64GB - Starting price: <span>₹13,999</span> (approx.) (Expandable up to 1TB with microSD card)
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 7 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 5MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> Optional Lenovo Precision Pen 2 support for note-taking
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont5" onclick="display('cont5')">
+            <div class="item-img img-hover">
+                <div class="img" id="img5"></div>
+            </div>
+            <span class="caption">realme Pad</span>
+            <ul>
+                <span>* Best Tablets for Students</span>
+                <li>
+                    <span>Display:</span> 10.4-inch WUXGA+ display with 2000 x 1200 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> MediaTek Helio G80
+                </li>
+                <li>
+                    <span>RAM:</span> <br>
+                    4GB - Starting price: <span>₹14,999</span> (approx.) <br>
+                    6GB - Starting price: <span>₹16,999</span> (approx.)
+                </li>
+                <li>
+                    <span>Storage:</span> <br>
+                    64GB - Starting price: <span>₹14,999</span> (approx.) <br>
+                    128GB - Starting price: <span>₹16,999</span> (approx.)
+                </li>
+                <li>
+                    <span>Battery:</span> 8340mAh battery with 18W fast charging
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 8MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 11 (expected upgrade to Android 12)
+                </li>
+                <li>
+                    <span>Special Features:</span> Quad speakers with Dolby Atmos
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont6" onclick="display('cont6')">
+            <div class="item-img img-hover">
+                <div class="img" id="img6"></div>
+            </div>
+            <span class="caption">Apple iPad Air (5th Gen)</span>
+            <ul>
+                <span>* High-End Tablets</span>
+                <li>
+                    <span>Battery:</span> Up to 10 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 12MP rear camera, 12MP ultra-wide front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> iPadOS 15 (upgradeable to iPadOS 16)
+                </li>
+                <li>
+                    <span>Special Features:</span> Touch ID fingerprint sensor, Apple Pencil (2nd generation) support
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <br>
+                    Wi-Fi - 64GB: <span>₹54,900</span>, 256GB: <span>₹64,900</span> <br>
+                    Wi-Fi + Cellular - 64GB: <span>₹69,900</span>, 256GB: <span>₹79,900</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont7" onclick="display('cont7')">
+            <div class="item-img img-hover">
+                <div class="img" id="img7"></div>
+            </div>
+            <span class="caption">Samsung Galaxy Tab S8 Ultra</span>
+            <ul>
+                <span>* High-End Tablets</span>
+                <li>
+                    <span>Display:</span> 14.6-inch Super AMOLED display with 2960 x 1848 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Qualcomm Snapdragon 8 Gen 1
+                </li>
+                <li>
+                    <span>RAM:</span> 8GB or 16GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB, 256GB, or 512GB
+                </li>
+                <li>
+                    <span>Battery:</span> 11,200mAh battery with 45W fast charging
+                </li>
+                <li>
+                    <span>Camera:</span> Dual 13MP rear cameras, 12MP ultra-wide front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> S Pen included for writing and drawing
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <br>
+                    Wi-Fi - 128GB: <span>₹104,999</span>, 256GB: <span>₹114,999</span>, 512GB: <span>₹129,999</span> <br>
+                    Wi-Fi + Cellular - 128GB: <span>₹119,999</span>, 256GB: <span>₹129,999</span>, 512GB: <span>₹144,999</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont8" onclick="display('cont8')">
+            <div class="item-img img-hover">
+                <div class="img" id="img8"></div>
+            </div>
+            <span class="caption">Xiaomi Pad 6</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 11-inch 2K+ display with 2880 x 1700 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Qualcomm Snapdragon 870
+                </li>
+                <li>
+                    <span>RAM:</span> 6GB or 8GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB or 256GB
+                </li>
+                <li>
+                    <span>Battery:</span> 8700mAh battery with 67W fast charging
+                </li>
+                <li>
+                    <span>Camera:</span> 13MP rear camera, 8MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 11 (expected upgrade to Android 12)
+                </li>
+                <li>
+                    <span>Special Features:</span> Dolby Vision Atmos quad speakers
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <br>
+                    Wi-Fi - 128GB: <span>₹34,999</span>, 256GB: <span>₹39,999</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont9" onclick="display('cont9')">
+            <div class="item-img img-hover">
+                <div class="img" id="img9"></div>
+            </div>
+            <span class="caption">OnePlus Pad Go</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.5-inch LCD display with 1920 x 1200 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Qualcomm Snapdragon 680
+                </li>
+                <li>
+                    <span>RAM:</span> 4GB or 6GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB
+                </li>
+                <li>
+                    <span>Battery:</span> 7500mAh battery with 18W fast charging
+                </li>
+                <li>
+                    <span>Camera:</span> 13MP rear camera, 8MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 13
+                </li>
+                <li>
+                    <span>Special Features:</span> Lightweight design
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <br>
+                    Wi-Fi - 128GB: <span>₹19,999</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont10" onclick="display('cont10')">
+            <div class="item-img img-hover">
+                <div class="img" id="img10"></div>
+            </div>
+            <span class="caption">Motorola Moto Tab G62</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.61-inch IPS LCD display with 2000 x 1200 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Snapdragon 680
+                </li>
+                <li>
+                    <span>RAM:</span> 4GB
+                </li>
+                <li>
+                    <span>Storage:</span> 64GB
+                </li>
+                <li>
+                    <span>Battery:</span> 7700mAh battery with 20W fast charging
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 5MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> Quad Dolby Atmos speakers
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <span>₹17,999</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont11" onclick="display('cont11')">
+            <div class="item-img img-hover">
+                <div class="img" id="img11"></div>
+            </div>
+            <span class="caption">Amazon Fire HD 10 </span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.1-inch IPS LCD display with 1080p resolution
+                </li>
+                <li>
+                    <span>Processor:</span> MediaTek Helio P22T
+                </li>
+                <li>
+                    <span>RAM:</span> 3GB
+                </li>
+                <li>
+                    <span>Storage:</span> 32GB or 64GB (expandable with microSD)
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 12 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 5MP rear camera, 2MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Fire OS (based on Android 11)
+                </li>
+                <li>
+                    <span>Special Features:</span> Access to Amazon's appstore and content ecosystem
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <br>
+                    32GB - <span>₹11,999</span> (Wi-Fi) <br>
+                    64GB - <span>₹13,999</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont12" onclick="display('cont12')">
+            <div class="item-img img-hover">
+                <div class="img" id="img12"></div>
+            </div>
+            <span class="caption">Utron T7 Pro</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.1-inch IPS LCD display with 1200 x 800 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Unisoc SC9863A
+                </li>
+                <li>
+                    <span>RAM:</span> 4GB
+                </li>
+                <li>
+                    <span>Storage:</span> 64GB (expandable with microSD)
+                </li>
+                <li>
+                    <span>Battery:</span> 8000mAh battery
+                </li>
+                <li>
+                    <span>Camera:</span> 5MP rear camera, 2MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> Dual speakers
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <span>₹8,999 </span>(Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont13" onclick="display('cont13')">
+            <div class="item-img img-hover">
+                <div class="img" id="img13"></div>
+            </div>
+            <span class="caption">Ironshield iPlay 40</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.4-inch IPS LCD display with 2000 x 1200 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Unisoc Tiger T618
+                </li>
+                <li>
+                    <span>RAM:</span> 8GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB (expandable with microSD)
+                </li>
+                <li>
+                    <span>Battery:</span> 8000mAh battery
+                </li>
+                <li>
+                    <span>Camera:</span> 13MP rear camera, 5MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> Dual speakers
+                </li>
+                <li>
+                    <span>Pricing:</span>(approx.) <span>₹14,499</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont14" onclick="display('cont14')">
+            <div class="item-img img-hover">
+                <div class="img" id="img14"></div>
+            </div>
+            <span class="caption">IKALL N5 4G</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 6.4-inch display (resolution not specified)
+                </li>
+                <li>
+                    <span>Processor:</span> Octa-core processor (specific model not mentioned)
+                </li>
+                <li>
+                    <span>RAM:</span> 2GB or 3GB
+                </li>
+                <li>
+                    <span>Storage:</span> 32GB
+                </li>
+                <li>
+                    <span>Battery:</span> Battery capacity not specified
+                </li>
+                <li>
+                    <span>Camera:</span> Rear camera resolution not specified, Front camera resolution not specified
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 11
+                </li>
+                <li>
+                    <span>Special Features:</span> 4G calling support
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> Starting at <span>₹10,999</span> (depending on RAM)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont15" onclick="display('cont15')">
+            <div class="item-img img-hover">
+                <div class="img" id="img15"></div>
+            </div>
+            <span class="caption">ALLDOCUBE iPlay 40</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.4-inch IPS LCD display with 2000 x 1200 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Unisoc Tiger T618
+                </li>
+                <li>
+                    <span>RAM:</span> 8GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB (expandable with microSD)
+                </li>
+                <li>
+                    <span>Battery:</span> 8000mAh battery
+                </li>
+                <li>
+                    <span>Camera:</span> 13MP rear camera, 5MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> Dual speakers
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <span>₹14,999</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont16" onclick="display('cont16')">
+            <div class="item-img img-hover">
+                <div class="img" id="img16"></div>
+            </div>
+            <span class="caption">TECLAST M40</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.1-inch IPS LCD display with 1920 x 1200 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Unisoc Tiger T618
+                </li>
+                <li>
+                    <span>RAM:</span> 6GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB (expandable with microSD)
+                </li>
+                <li>
+                    <span>Battery:</span> 7000mAh battery
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 5MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 12
+                </li>
+                <li>
+                    <span>Special Features:</span> Dual speakers
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <span>₹12,999</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont17" onclick="display('cont17')">
+            <div class="item-img img-hover">
+                <div class="img" id="img17"></div>
+            </div>
+            <span class="caption">CHUWI Hi10 Go</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 10.1-inch IPS LCD display with 1200 x 800 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Intel Celeron N4020
+                </li>
+                <li>
+                    <span>RAM:</span> 4GB
+                </li>
+                <li>
+                    <span>Storage:</span> 64GB (expandable with microSD)
+                </li>
+                <li>
+                    <span>Battery:</span> 5000mAh battery
+                </li>
+                <li>
+                    <span>Camera:</span> 5MP rear camera, 2MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Windows 11
+                </li>
+                <li>
+                    <span>Special Features:</span> Lightweight design
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <span>₹13,499</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont18" onclick="display('cont18')">
+            <div class="item-img img-hover">
+                <div class="img" id="img18"></div>
+            </div>
+            <span class="caption">Apple iPad Pro 12.9-inch</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 12.9-inch Liquid Retina XDR mini-LED display with 2532 x 1824 resolution and ProMotion 120Hz refresh rate
+                </li>
+                <li>
+                    <span>Processor:</span> Apple M1 chip
+                </li>
+                <li>
+                    <span>RAM:</span> 8GB, 16GB, or 24GB
+                </li>
+                <li>
+                    <span>Storage:</span> 128GB, 256GB, 512GB, 1TB, or 2TB
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 10 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 12MP wide rear camera, 10MP ultrawide rear camera, LiDAR scanner, 12MP TrueDepth front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> iPadOS 15 (upgradeable to iPadOS 16)
+                </li>
+                <li>
+                    <span>Special Features:</span> Face ID, Thunderbolt/USB 4 port, Apple Pencil (2nd generation) support, Magic Keyboard compatible
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <br>
+                    Wi-Fi - 128GB: <span>₹1,09,990</span>, 256GB: <span>₹1,19,990</span>, 512GB: <span>₹1,34,990</span>, 1TB: <span>₹1,49,990</span>, 2TB: <span>₹1,64,990</span> <br>
+                    Wi-Fi + Cellular - 128GB: <span>₹1,24,990</span>, 256GB: <span>₹1,34,990</span>, 512GB: <span>₹1,49,990</span>, 1TB: <span>₹1,64,990</span>, 2TB: <span>₹1,79,990</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont19" onclick="display('cont19')">
+            <div class="item-img img-hover">
+                <div class="img" id="img19"></div>
+            </div>
+            <span class="caption">Lenovo Yoga Tab 13</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 13-inch 2K LCD display with 2160 x 1350 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> Snapdragon 870
+                </li>
+                <li>
+                    <span>RAM:</span> 8GB
+                </li>
+                <li>
+                    <span>Storage:</span> 256GB
+                </li>
+                <li>
+                    <span>Battery:</span> 10,200mAh battery with 30W fast charging
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 8MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Android 13
+                </li>
+                <li>
+                    <span>Special Features:</span> Built-in kickstand with multiple viewing angles, Dolby Atmos quad speakers, long battery life
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> <span>₹49,999</span> (Wi-Fi)
+                </li>
+            </ul>
+        </div>
+
+        <div class="container cnt-hover" id="cont20" onclick="display('cont20')">
+            <div class="item-img img-hover">
+                <div class="img" id="img20"></div>
+            </div>
+            <span class="caption">HP Elite x2 G8</span>
+            <ul>
+                <li>
+                    <span>Display:</span> 13-inch WUXGA+ touchscreen display with 1920 x 1280 resolution
+                </li>
+                <li>
+                    <span>Processor:</span> 11th Gen Intel Core i5 processor (options for higher-spec processors)
+                </li>
+                <li>
+                    <span>RAM:</span> 8GB, 16GB, or 32GB (depending on configuration)
+                </li>
+                <li>
+                    <span>Storage:</span> 256GB, 512GB, or 1TB (depending on configuration)
+                </li>
+                <li>
+                    <span>Battery:</span> Up to 10 hours of battery life
+                </li>
+                <li>
+                    <span>Camera:</span> 8MP rear camera, 5MP front camera
+                </li>
+                <li>
+                    <span>Operating System:</span> Windows 11 Pro
+                </li>
+                <li>
+                    <span>Special Features:</span> Detachable keyboard with built-in kickstand, fingerprint sensor, durable construction, optional accessories like a stylus
+                </li>
+                <li>
+                    <span>Pricing (approx.):</span> Starts at <span>₹84,999</span> (depending on configuration)
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <footer>
+
+        <div class="footer">
+
+
+            <div class="about" id="about">
+                <span class="foot-heading">About Us</span>
+                <p>
+                    "Welcome to Gadget Glance! Delve into our realm of smart devices and reviews, where innovation and
+                    expertise converge. Discover the latest gadgets and expert insights, making your tech journey a
+                    breeze."
+                </p>
+        
+                <span class="subscribe-heading">Subscribe For Newsletter</span>
+                <form onsubmit="alert('your request has been submited')">
+                    <input type="email" id="footer-mail" placeholder="Your Email" required>
+                    <input type="submit" value="Subscribe" id="footer-btn">
+                </form>
+            </div> <!-- about end -->
+        
+        
+            <div class="contact" id="contact">
+                <span class="foot-heading">Contact Us</span>
+                <p>
+                    Have a question, suggestion, or just want to connect with us? Feel free to reach out to our team
+                    using the contact information below:
+                    <a href="#">Email: xyz123@email.com</a>
+                    <a href="#">Phone: +123456655</a>
+                    We're here to assist you every step of the way. Looking forward to hearing from you!
+                </p>
+            </div> <!-- contact end -->
+        </div> <!-- footer class end -->
+        
+        <hr>
+        <p id="copyright">&copy; 2024 Your Company. All rights reserved.</p>
+
+    </footer>
+
+    <span id="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
+
+    <script src="reviews.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee&family=Patrick+Hand+SC&family=Titan+One&display=swap');
+        
+        body{
+            font-family: sans-serif;
+        }
+        .wrapper{
+            width:100%;
+
+        }
+        .wrapper .container{
+            margin-top: 18vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .wrapper .container table{
+            width: 70%;
+            border-collapse: collapse;
+            background: rgba(0, 22, 20, 0.559);
+        }
+        table td{
+            height: 10vh;
+            text-align: center;
+            color: white;
+            border: 1px solid #23fee1;
+            padding: 5px 10px;
+        }
+        table th{
+            height: 10vh;
+            border: 2px solid black;
+            padding: 0 10px;
+            font-weight: 100;
+            font-size: 1.1rem;
+            font-family: "Black Ops One", system-ui;
+            border: 2px solid black;
+        }
+
+        table tr th{
+            background: #23fee1;
+            color:black;
+        }
+        table tr:hover td{
+            border-top: 2px solid #23fee1;
+            border-bottom: 2px solid #23fee1;
+        }
+    
+        table tr:nth-child(1) td{
+            border:none;
+        }
+        
+        table tr td span{
+            font-size: 1.2rem;
+        }
+        table tr:nth-child(1) td{
+            border: 2px solid white;
+            color: #23fee1;
+            font-family: "Black Ops One", system-ui;
+        }
+        .container .img-box{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            /* background: yellow; */
+        }
+        .container .img-box .img{
+            width: 300px;
+            min-width: 120px;
+            height: 80%;
+            /* border: 1px solid white; */
+        }
+        .container .img-box span{
+            font-size: 2rem;
+            font-family: "Black Ops One", system-ui;
+            color: #23fee1;
+            background: white;
+            padding: 1rem;
+            border-radius: 50%;
+            animation: anim 2s ease infinite;
+        }
+        @keyframes anim{
+            
+            0%{
+                background: black;
+                color: #23fee1;
+                transform: scale(1.1);
+            }
+            50%{
+                background: #23fee1;
+                color: black;
+                transform: scale(1);
+            }
+            100%{
+                background: black;
+                color: #23fee1;
+                transform: scale(1.1);
+            }
+        
+        }
+        #img1{
+            background: url("images/galaxy-s23-ultra.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            animation: img 2s linear infinite;
+        }
+        #img2{
+            background: url("images/galaxy-s24-ultra.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            animation: img 2s linear infinite;
+        }
+        @keyframes img{
+            0%{
+                transform: scale(1.1) ;
+            }
+            25%{
+                transform: scale(1) ;
+            }
+            50%{
+                transform: scale(1) ;
+            }
+            75%{
+                transform: scale(1.1) ;
+            }
+            100%{
+                transform: scale(1.1) ;
+            }
+        }
+
+        @media (max-width:850px){
+            .container .img-box .img{
+                width: 180px;
+            }
+            .container .img-box span{
+                font-size: 1.4rem;
+                padding: .6rem;
+            }
+            .wrapper .container table{
+                width: 90%;
+            }
+            table th{
+                font-size: .9rem;
+            }
+            table tr td span{
+            font-size: .9rem;
+        }
+        table td{
+            font-size: .8rem;
+        }
+
+        }
+        @media (max-width:710px){
+            .container .img-box .img{
+                width: 140px;
+            }
+            .container .img-box span{
+                font-size: 1rem;
+                padding: .5rem;
+            }
+            .container .img-box{
+                height: 30vh;
+            }
+            table th{
+                font-size: .8rem;
+            }
+            table tr td span{
+            font-size: .8rem;
+        }
+        table td{
+            font-size: .7rem;
+        }
+        }
+        @media (max-width:540px){
+            .container .img-box .img{
+                width: 120px;
+            }
+            .container .img-box span{
+                font-size: .9rem;
+                padding: .3rem;
+            }
+            .container .img-box{
+                height: 25vh;
+            }
+        }
+    </style>
+
+<script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Logo" id="logo" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-box">
+            <input type="search" id="nav-search" placeholder="Search For Review..." />
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle">
+            <div class="menu">
+                <span>menu</span>
+                <div class="bars">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+            </div>
+        </label>
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="#" id="reviews">Reviews</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#footer">About</a></li>
+        </ul>
+
+        <ul class="sub-reviews">
+            <span class="cross" id="cross">X</span>
+            <li><a href="reviews.html">Mobile Reviews</a></li>
+            <li><a href="laptop_review.html">Laptop Reviews</a></li>
+            <li><a href="tablet_review.html">Tablet Reviews</a></li>
+        </ul>
+    </header>
+
+    
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="img-box">
+                <div class="img" id="img1"></div>
+                <span>v/s</span>
+                <div class="img" id="img2"></div>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <span>Compare By:</span>
+                    </td>
+                    <td>
+                        <span>Galaxy S23 Ultra</span>
+                    </td>
+                    <td>
+                        <span>Galaxy S24 Ultra</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Design:</th>
+                    <td>Glass, metal</td>
+                    <td>Glass, metal</td>
+                  </tr>
+                  <tr>
+                    <th>Display:</th>
+                    <td>6.8" Dynamic AMOLED, QHD+</td>
+                    <td>6.9" Dynamic AMOLED 3X, QHD+</td>
+                  </tr>
+                  <tr>
+                    <th>Processor:</th>
+                    <td>8 Gen 2/Exynos 2200</td>
+                    <td>8 Gen 3/Exynos 2200</td>
+                  </tr>
+                  <tr>
+                    <th>RAM/Storage:</th>
+                    <td>12/16GB RAM, 256/512GB storage</td>
+                    <td>12/16GB RAM, 256/512GB storage</td>
+                  </tr>
+                  <tr>
+                    <th>Camera:</th>
+                    <td>Quad-camera (108MP main)</td>
+                    <td>Quad-camera (Upgraded sensors)</td>
+                  </tr>
+                  <tr>
+                    <th>Front Camera:</th>
+                    <td>40MP</td>
+                    <td>Similar or upgraded</td>
+                  </tr>
+                  <tr>
+                    <th>Battery:</th>
+                    <td>Around 5000mAh, Fast charging</td>
+                    <td>Similar or improved</td>
+                  </tr>
+                  <tr>
+                    <th>OS:</th>
+                    <td>Android 13, One UI 5.1</td>
+                    <td>Android 13, One UI 5.1</td>
+                  </tr>
+                  <tr>
+                    <th>Connectivity:</th>
+                    <td>5G, Wi-Fi 6E, Bluetooth 5.2</td>
+                    <td>5G, Wi-Fi 6E, Bluetooth 5.2</td>
+                  </tr>
+                  <tr>
+                    <th>Biometrics:</th>
+                    <td>Under-display fingerprint, face unlock</td>
+                    <td>Under-display fingerprint, face unlock</td>
+                  </tr>
+                  <tr>
+                    <th>Features:</th>
+                    <td>IP68, Samsung Knox security</td>
+                    <td>IP68, Samsung Knox security</td>
+                  </tr>
+                  <tr>
+                    <th>Price:</th>
+                    <td>$1,200–$1,500</td>
+                    <td>$1,300–$1,600</td>
+                  </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <p  id="footer"></p>
+    <footer>
+
+        <div class="footer">
+
+
+            <div class="about" id="about">
+                <span class="foot-heading">About Us</span>
+                <p>
+                    "Welcome to Gadget Glance! Delve into our realm of smart devices and reviews, where innovation and
+                    expertise converge. Discover the latest gadgets and expert insights, making your tech journey a
+                    breeze."
+                </p>
+        
+                <span class="subscribe-heading">Subscribe For Newsletter</span>
+                <form onsubmit="alert('your request has been submited')">
+                    <input type="email" id="footer-mail" placeholder="Your Email" required>
+                    <input type="submit" value="Subscribe" id="footer-btn">
+                </form>
+            </div> <!-- about end -->
+        
+        
+            <div class="contact" id="contact">
+                <span class="foot-heading">Contact Us</span>
+                <p>
+                    Have a question, suggestion, or just want to connect with us? Feel free to reach out to our team
+                    using the contact information below:
+                    <a href="#">Email: xyz123@email.com</a>
+                    <a href="#">Phone: +123456655</a>
+                    We're here to assist you every step of the way. Looking forward to hearing from you!
+                </p>
+            </div> <!-- contact end -->
+        </div> <!-- footer class end -->
+        
+        <hr>
+        <p id="copyright">&copy; 2024 Your Company. All rights reserved.</p>
+
+    </footer>
+
+    <span id="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

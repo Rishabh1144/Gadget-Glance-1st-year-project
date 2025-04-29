@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee&family=Patrick+Hand+SC&family=Titan+One&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            width:100%;
+            height:100vh;
+            font-family: sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url("images/bgimg.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .wrapper{
+            width:100%;
+            margin-top: 16vh;
+        }
+        .wrapper .container{
+            width: 100%;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .container .card{
+            width: 250px;
+            height: 390px;
+            /* border:1px solid #fff; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container .card .card-img{
+            width: 100%;
+            height: 70%;
+            background-image: url("images/card\ background.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container .card .card-img .img{
+            width: 90%;
+            height: 90%;
+        }
+        .container .card span{
+            display: block;
+            font-size: 1.2rem;
+            font-family: "Black Ops One", system-ui;
+            margin-top: 1rem;
+            color:#fff;
+            text-align: center;
+        }
+        .container .card a{
+            display: block;
+            width: 68%;
+            height: 13%;
+            margin: 1rem 0;
+        }
+        .container .card a button{
+            width: 100%;
+            height: 100%;
+            border:none;
+            font-size: 1.2rem;
+            font-family: "Black Ops One", system-ui;
+            color: white;
+            background: none;
+            border: 2px solid #23fee1;
+            cursor: pointer;
+
+            &:hover{
+                background: #1fcfb7;
+            }
+        }
+        .container .card:hover .card-img {
+            border: 8px solid #23fee1;
+        }
+        .container .card:hover button{
+            background: #23fee1;
+            color: black;
+        }
+
+        #img1{
+            background: url("images/ipad-pro-12.9-inch.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        
+        #img2{
+            background: url("images/galaxy-tab-s9-ult.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img3{
+            background: url("images/microsoft-surface-pro-9.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img4{
+            background: url("images/apple-ipad-air-m1-chip.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img5{
+            background: url("images/galaxy-tab-s8+.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img6{
+            background: url("images/lenovo-tab-p12-pro.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img7{
+            background: url("images/xiaomi-pad-6s-pro.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img8{
+            background: url("images/galaxy-tab-a8.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img9{
+            background: url("images/realme-pad-wifi+4g.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img10{
+            background: url("images/nokia-t20.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img11{
+            background: url("images/lenovo-ideapad-duet-3.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img12{
+            background: url("images/dragon-touch-max-10.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img13{
+            background: url("images/itel-pad-one.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img14{
+            background: url("images/oppo-pad-air.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        #img15{
+            background: url("images/huawei-matepad-se.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+    </style>
+
+<script src="https://kit.fontawesome.com/02d4db2b6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Logo" id="logo" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-box">
+            <input type="search" id="nav-search" placeholder="Search For Review..." />
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle">
+            <div class="menu">
+                <span>menu</span>
+                <div class="bars">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
+            </div>
+        </label>
+        <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="#" id="reviews">Reviews</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#footer">About</a></li>
+        </ul>
+
+        <ul class="sub-reviews">
+            <span class="cross" id="cross">X</span>
+            <li><a href="reviews.html">Mobile Reviews</a></li>
+            <li><a href="laptop_review.html">Laptop Reviews</a></li>
+            <li><a href="tablet_review.html">Tablet Reviews</a></li>
+        </ul>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img1"></div>
+                </div>
+                <span>Apple iPad Pro 12.9-inch</span>
+                <a href="https://amzn.in/d/8GM7apD">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img2"></div>
+                </div>
+                <span>Samsung Galaxy Tab S9 Ult</span>
+                <a href="https://a.co/d/fMhNOni">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img3"></div>
+                </div>
+                <span>Microsoft Surface Pro 9</span>
+                <a href="https://a.co/d/2aIpSaF">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img4"></div>
+                </div>
+                <span>Apple iPad Air M1 Chip</span>
+                <a href="https://a.co/d/5KEOwk4">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img5"></div>
+                </div>
+                <span>Samsung Galaxy Tab S8+</span>
+                <a href="https://amzn.in/d/b1AtRQJ">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img6"></div>
+                </div>
+                <span>Lenovo Tab P12 Pro</span>
+                <a href="https://amzn.in/d/hCTKVHa">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img7"></div>
+                </div>
+                <span>Xiaomi Pad 6S Pro</span>
+                <a href="https://amzn.in/d/0FB6kS6">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img8"></div>
+                </div>
+                <span>Samsung Galaxy Tab A8</span>
+                <a href="https://a.co/d/2OrhDFb">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img9"></div>
+                </div>
+                <span>realme Pad Wi-Fi+4G</span>
+                <a href="https://amzn.in/d/5vqoFTC">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img10"></div>
+                </div>
+                <span>Nokia T20</span>
+                <a href="https://amzn.in/d/5hrA6gJ">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img11"></div>
+                </div>
+                <span>Lenovo IdeaPad Duet 3</span>
+                <a href="https://amzn.in/d/eTdXJxB">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img12"></div>
+                </div>
+                <span>Dragon Touch Max 10</span>
+                <a href="https://a.co/d/4PBJwv2">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img13"></div>
+                </div>
+                <span>itel PAD ONE</span>
+                <a href="https://amzn.in/d/5wAzRRe">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img14"></div>
+                </div>
+                <span>OPPO Pad Air</span>
+                <a href="https://amzn.in/d/jaO6z33">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <div class="card-img">
+                    <div class="img" id="img15"></div>
+                </div>
+                <span>Huawei MatePad SE</span>
+                <a href="https://a.co/d/8vdfkHB">
+                    <button>
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <p  id="footer"></p>
+    <footer>
+
+        <div class="footer">
+
+
+            <div class="about" id="about">
+                <span class="foot-heading">About Us</span>
+                <p>
+                    "Welcome to Gadget Glance! Delve into our realm of smart devices and reviews, where innovation and
+                    expertise converge. Discover the latest gadgets and expert insights, making your tech journey a
+                    breeze."
+                </p>
+        
+                <span class="subscribe-heading">Subscribe For Newsletter</span>
+                <form onsubmit="alert('your request has been submited')">
+                    <input type="email" id="footer-mail" placeholder="Your Email" required>
+                    <input type="submit" value="Subscribe" id="footer-btn">
+                </form>
+            </div> <!-- about end -->
+        
+        
+            <div class="contact" id="contact">
+                <span class="foot-heading">Contact Us</span>
+                <p>
+                    Have a question, suggestion, or just want to connect with us? Feel free to reach out to our team
+                    using the contact information below:
+                    <a href="#">Email: xyz123@email.com</a>
+                    <a href="#">Phone: +123456655</a>
+                    We're here to assist you every step of the way. Looking forward to hearing from you!
+                </p>
+            </div> <!-- contact end -->
+        </div> <!-- footer class end -->
+        
+        <hr>
+        <p id="copyright">&copy; 2024 Your Company. All rights reserved.</p>
+
+    </footer>
+
+    <span id="arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
